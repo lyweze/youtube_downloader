@@ -1,0 +1,185 @@
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #edede9;
+}
+
+header {
+	width: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom-color: #d5bdaf;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	height: 40px;
+
+	> div {
+		display: flex;
+		align-items: center;
+
+		> h1 {
+			margin: 0;
+			margin-top: 2px;
+			margin-left: 5px;
+			color: red;
+			font-family: "Roboto";
+			font-size: 20px;
+			font-weight: 500;
+
+			> span {
+				color: #383838;
+			}
+		}
+	}
+
+	> button {
+		width: 130px;
+		height: 30px;
+		border: none;
+		border-radius: 8px;
+		background-color: #d9d9d9;
+		font-family: "Roboto";
+		font-size: 16px;
+		font-weight: 400;
+		color: #383838;
+		cursor: pointer;
+	}
+}
+
+article {
+	margin-top: 20px;
+	width: 1000px;
+	height: 200px;
+	background-color: #d9d9d9;
+	border-radius: 16px;
+}
+
+main {
+	margin-top: 20px;
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	> ul {
+		width: 187px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		> li {
+			z-index: 3;
+			font-family: "Roboto";
+			font-size: 20px;
+			font-weight: 800;
+		}
+
+		#youtube {
+			color: #fff;
+			margin-left: 5px;
+		}
+
+		#rutube {
+			margin-right: 5px;
+		}
+
+		> div {
+			z-index: 0;
+			position: absolute;
+			width: 100px;
+			height: 30px;
+			background-color: red;
+			border-radius: 8px;
+		}
+	}
+
+	.input {
+		margin-top: 16px;
+		width: 1000px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		> input {
+			padding: 0 10px;
+			width: 916px;
+			height: 46px;
+			border-radius: 8px;
+			border-color: #70e000;
+			border-style: solid;
+			outline-style: none;
+			font-family: "Roboto";
+			font-size: 20px;
+			font-weight: 600;
+			background-color: #d9d9d9;
+		}
+
+		> button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			border: none;
+			border-radius: 8px;
+			background-color: red;
+			cursor: pointer;
+		}
+	}
+
+	.download {
+		width: 1000px;
+		margin-top: 20px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		> div {
+			width: 940px;
+			/* height: 587.5px; */
+			border-radius: 16px;
+			background-color: #d9d9d9;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			> img {
+				margin: 10px;
+				width: 917.02px;
+				border-radius: 8px;
+			}
+
+			> p {
+                margin: 10px;
+                margin-top: 0px;
+				font-family: "Roboto";
+				font-size: 20px;
+				font-weight: 600;
+			}
+		}
+
+		> button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			border: none;
+			background-color: #70e000;
+			border-radius: 8px;
+            cursor: pointer;
+		}
+	}
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("./Roboto.ttf");
+}
