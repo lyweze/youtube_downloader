@@ -6,7 +6,7 @@
 		<title>Downloader</title>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
-	<body>
+	<body id="body">
 		<header>
 			<div>
 				<svg
@@ -41,23 +41,21 @@
 
 				<h1>YOUTUBE<span> DOWNLOADER</span></h1>
 			</div>
-
-			<button type="button">SWITCH THEME</button>
 		</header>
 
 		<article class="govno"></article>
 
 		<main>
 			<ul>
-				<li id="youtube">YOUTUBE</li>
-				<li id="rutube">RUTUBE</li>
-				<div></div>
+				<li id="youtube" onclick="changeService('youtube')">YOUTUBE</li>
+				<li id="rutube" onclick="changeService('rutube')">RUTUBE</li>
+				<div id="selector"></div>
 			</ul>
 
 			<div class="input">
-				<input type="text" placeholder="Enter URL here" />
+				<input id="input" type="text" placeholder="Enter URL here" />
 
-				<button>
+				<button id="generateLink">
 					<svg
 						width="32"
 						height="32"
@@ -85,7 +83,10 @@
 
 			<div class="download">
 				<div>
-					<img src="https://avatars.mds.yandex.net/i?id=3be5bd61222538c0bb3d27128e2128ebf35ed708-13234616-images-thumbs&n=13" alt="" />
+					<img
+						src="https://avatars.mds.yandex.net/i?id=3be5bd61222538c0bb3d27128e2128ebf35ed708-13234616-images-thumbs&n=13"
+						alt=""
+					/>
 					<p>NOOB vs PRO vs HACKER</p>
 				</div>
 
@@ -108,5 +109,17 @@
 				</button>
 			</div>
 		</main>
+
+		<footer>
+			<div>
+				<a href="https://github.com/lyweze/youtube_downloader">
+					https://github.com/lyweze/youtube_downloader
+				</a>
+
+				<p>non-commercial project</p>
+			</div>
+		</footer>
+
+        <script src="./script.js"></script>
 	</body>
 </html>
